@@ -49,7 +49,6 @@ import java.util.List;
                 System.out.println(c.getNome());
 
 
-
             List<Pessoa> pessoas = new ArrayList<>();
             pessoas.add(instrutor1);
             pessoas.add(instrutor2);
@@ -59,5 +58,8 @@ import java.util.List;
                 for (Curso c : p.obterCursos())
                     System.out.println(c.getNome());
             }
+
+            System.out.println("\nTotal gasto por " + aluno.getNome() + ": R$ " + aluno.calcularGastos());
+
         }
     }

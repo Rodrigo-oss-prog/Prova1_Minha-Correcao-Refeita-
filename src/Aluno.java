@@ -41,12 +41,13 @@ public class Aluno extends Pessoa {
         this.matriculas = matriculas;
     }
 
-    public void calcularGastos(){
+    public double calcularGastos(){
         double gastos = 0;
         for (Matricula m : matriculas) {
             gastos += m.getTurma().getCurso().getValor();
         }
-        System.out.println("Gastos: " + gastos);
+        return gastos;
+
     }
 
 
